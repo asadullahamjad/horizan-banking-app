@@ -10,7 +10,7 @@ declare type SearchParamProps = {
 declare type SignUpParams = {
   firstName: string;
   lastName: string;
-  address1: string;
+  address: string;
   city: string;
   state: string;
   postalCode: string;
@@ -34,12 +34,14 @@ declare type User = {
   firstName: string;
   lastName: string;
   name: string;
-  address1: string;
+  address: string;
   city: string;
   state: string;
   postalCode: string;
   dateOfBirth: string;
   ssn: string;
+  publicToken:string
+  
 };
 
 declare type NewUserParams = {
@@ -175,8 +177,20 @@ declare interface PaginationProps {
 
 declare interface PlaidLinkProps {
   user: User;
-  variant?: "primary" | "ghost";
+  variants?: "primary" | "ghost";
   dwollaCustomerId?: string;
+}
+
+// declare interface PlaidLinkOptions {
+//   token: string;
+  
+//   onSuccess: (public_token: string) => void; // Adjusted to accept a string parameter
+// }
+
+declare interface ExchangePublicTokenParams {
+  publicToken: string;
+  user:User
+  // Add other properties if needed
 }
 
 // declare type User = sdk.Models.Document & {

@@ -209,11 +209,11 @@
   }
 
   .header-box {
-    @apply flex flex-col gap-1;
+    @apply flex flex-col gap-1 ;
   }
 
   .header-box-title {
-    @apply text-24 lg:text-30 font-semibold text-gray-900;
+    @apply text-30  lg:text-30 font-semibold text-gray-900;
   }
 
   .header-box-subtext {
@@ -226,7 +226,7 @@
   }
 
   .bank-card_content {
-    @apply relative z-10 flex size-full max-w-[228px] flex-col justify-between rounded-l-[20px] bg-gray-700 bg-bank-gradient px-5 pb-4 pt-5;
+    @apply relative z-10 flex h-full w-full max-w-[228px] flex-col justify-between rounded-l-[20px] bg-gray-700 bg-bank-gradient px-5 pb-4 pt-5;
   }
 
   .bank-card_icon {
@@ -336,7 +336,7 @@
 
   /* Footer */
   .footer {
-    @apply flex cursor-pointer items-center justify-between gap-2 py-6;
+    @apply flex cursor-pointer items-center justify-between gap-1 py-6 ;
   }
 
   .footer_name {
